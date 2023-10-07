@@ -1,8 +1,15 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./Pages/Login";
+
 const App = () => {
   return (
-    <>
-       <h1 className="text-3xl font-bold underline">Authenticitry Report Generator</h1>
-    </>
+    <Router>
+      <div className="container mx-auto p-4">
+        <Routes>
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 
