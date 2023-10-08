@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Form1 from "../../components/Form1";
+import Form2 from "../../components/Form2";
 
 const Report = () => {
   const [step, setStep] = useState(1);
@@ -21,8 +22,8 @@ const Report = () => {
   switch (step) {
     case 1:
       return <Form1 onSubmit={handleFormSubmit} />;
-    // case 2:
-    //   return <Form2 onSubmit={handleFormSubmit} />;
+    case 2:
+      return <Form2 onSubmit={handleFormSubmit} />;
     // case 3:
     //   return <Form3 onSubmit={handleFormSubmit} />;
     // default:

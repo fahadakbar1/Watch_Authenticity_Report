@@ -127,6 +127,7 @@ const Form1 = ({ onSubmit }: any) => {
                       boxShadow: "none",
                       hoverBackgroundColor: "lightgrey",
                       fontSize: "12px",
+                      zIndex:1
                     }}
                     onClear={() => {
                       setValue("watchBrand", "");
