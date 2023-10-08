@@ -7,6 +7,7 @@ import {
 import Login from "./Pages/Login";
 import Home from "./Pages/Home";
 import { useState } from "react";
+import Report from "./Pages/Report";
 const App = () => {
   const [isLoggedIn, setIsLoggedin] = useState(true);
   return (
@@ -18,6 +19,7 @@ const App = () => {
             element={isLoggedIn ? <Home /> : <Navigate to="/login" />}
           />
           <Route path="/login" element={<Login />} />
+          <Route path="/report" element={<Report />} />
         </Routes>
       </div>
     </Router>
